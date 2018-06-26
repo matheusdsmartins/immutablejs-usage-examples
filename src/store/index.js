@@ -1,7 +1,6 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux-immutable'
 import { all } from 'redux-saga/effects'
 
-import axiosInstance from '../utils/http'
 import exampleReducer from './example/reducers'
 import exampleSagas from './example/sagas'
 
@@ -12,5 +11,5 @@ export function * rootSaga () {
 }
 
 export default combineReducers({
-  exampleReducer
+  example: exampleReducer
 })

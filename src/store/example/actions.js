@@ -1,6 +1,11 @@
 import * as types from './constants'
 
-export const changeTheme = theme => ({
-  type: types.CHANGE_THEME,
-  payload: theme
+export const requestUpdateForm = data => ({
+  type: types.UPDATE_FORM,
+  payload: data
+})
+
+export const updateForm = data => ({
+  type: types.UPDATE_FORM,
+  payload: data
 })
